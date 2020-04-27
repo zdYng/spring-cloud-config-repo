@@ -1,0 +1,29 @@
+server:
+  address: 192.168.1.104  # localhost
+  port: 8761
+
+eureka:
+  instance:
+    instance-id: 192.168.1.104:8761  # localhost:8761
+#    hostname: localhost:8761
+    prefer-ip-address: true
+  client:
+#    register-with-eureka: false
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+  #      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://test:123456@192.168.1.104:8761/eureka
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enableSelfPreservation: false
+
+spring:
+  application:
+    name: eureka
+  security:
+    user:
+      name:
+        test
+      password:
+        123456
