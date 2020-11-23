@@ -8,11 +8,11 @@ spring:
     name: config-client
   cloud:
     config:
-      label: master #Ô¶³Ì²Ö¿âµÄ·ÖÖ§
-      profile: test # ÅäÖÃÎÄ¼ş
+      label: master #è¿œç¨‹ä»“åº“çš„åˆ†æ”¯
+      profile: test # é…ç½®æ–‡ä»¶
       discovery:
-        enabled: true # ´ÓÅäÖÃÖĞĞÄ¶ÁÈ¡ÎÄ¼ş¡£
-        service-id: config-server # Í¨¹ı·şÎñÃû³ÆÈ¥ Eureka×¢²áÖĞĞÄÕÒ·şÎñ
+        enabled: true # ä»é…ç½®ä¸­å¿ƒè¯»å–æ–‡ä»¶ã€‚
+        service-id: config-server # é€šè¿‡æœåŠ¡åç§°å» Eurekaæ³¨å†Œä¸­å¿ƒæ‰¾æœåŠ¡
 server:
   port: 7020
 
