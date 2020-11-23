@@ -11,7 +11,7 @@ spring:
   cloud:
     config:
       label: master #远程仓库的分支
-      profile: test # 配置文件
+      profile: dev # 配置文件
       discovery:
         enabled: true # 从配置中心读取文件。
         service-id: config-server # 通过服务名称去 Eureka注册中心找服务
