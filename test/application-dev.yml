@@ -1,3 +1,5 @@
+config.vendor: "test.com"
+config.accountType.default: "admin"
 test: test-test
 eureka:
   client:
