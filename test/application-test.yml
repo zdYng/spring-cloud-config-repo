@@ -1,0 +1,33 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
+
+server:
+  address: 192.168.0.10
+  port: 7017
+
+spring:
+  rabbitmq:
+    host: 47.111.232.105
+    port: 5672
+    username: qiyuan
+    password: qyQY123321
+    virtual-host: /
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          search-paths: spring-cloud-config-repo
+          uri: https://github.com/zdYng/spring-cloud-config-repo.git
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://test:qy123456@47.111.232.105:8761/eureka
+    instance:
+      prefer-ip-address: true
