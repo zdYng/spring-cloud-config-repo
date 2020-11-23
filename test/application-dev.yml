@@ -1,4 +1,4 @@
-config.vendor: "test.com"
+config.vendor: "test123.com"
 config.accountType.default: "admin"
 test: test-test
 eureka:
